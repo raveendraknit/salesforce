@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <chart>
+        <chartSummaries>
+            <column>Tripolis_Email_Result__c$Number_of_Total_Clicks__c</column>
+        </chartSummaries>
+        <chartType>None</chartType>
+        <enableHoverLabels>false</enableHoverLabels>
+        <expandOthers>false</expandOthers>
+        <groupingColumn>Tripolis_Email_Result__c$Subject_Line__c</groupingColumn>
+        <showAxisLabels>false</showAxisLabels>
+        <showPercentage>false</showPercentage>
+        <showTotal>false</showTotal>
+        <showValues>false</showValues>
+    </chart>
+    <columns>
+        <field>Tripolis_Email_Result__c$Delivered__c</field>
+    </columns>
+    <columns>
+        <field>Tripolis_Email_Result__c$Subject_Line__c</field>
+    </columns>
+    <columns>
+        <field>Tripolis_Email_Result__c$Number_of_Total_Clicks__c</field>
+    </columns>
+    <columns>
+        <field>Tripolis_Email_Result__c$CreatedDate</field>
+    </columns>
+    <columns>
+        <field>Tripolis_Email_Result__c$Campaign__c</field>
+    </columns>
+    <description>total clicks per campaign</description>
+    <filter>
+        <criteriaItems>
+            <column>Tripolis_Email_Result__c$Campaign__c</column>
+            <operator>notEqual</operator>
+            <value></value>
+        </criteriaItems>
+    </filter>
+    <format>Tabular</format>
+    <name>Total click report</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>Tripolis_Report__c</reportType>
+    <rowLimit>10</rowLimit>
+    <scope>user</scope>
+    <showDetails>true</showDetails>
+    <sortColumn>Tripolis_Email_Result__c$CreatedDate</sortColumn>
+    <sortOrder>Desc</sortOrder>
+    <timeFrameFilter>
+        <dateColumn>Tripolis_Email_Result__c$CreatedDate</dateColumn>
+        <interval>INTERVAL_CURRENT</interval>
+    </timeFrameFilter>
+</Report>

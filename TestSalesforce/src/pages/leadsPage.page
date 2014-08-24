@@ -1,0 +1,4 @@
+<apex:page >
+    <apex:enhancedList type="Lead" height="500"  rowsPerPage="10" /> 
+  
+</apex:page>
